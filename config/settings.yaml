@@ -1,0 +1,68 @@
+advanced:
+  cache_expiry_hours: 24
+  chunk_size: 1000
+  enable_cache: false
+  error_backoff_factor: 2.0
+  log_backup_count: 5
+  log_rotation_size: 10MB
+  max_concurrent_requests: 5
+  max_consecutive_errors: 10
+appearance:
+  always_on_top: false
+  auto_switch_dark_mode: false
+  dark_mode_end_time: 06:00
+  dark_mode_start_time: '20:00'
+  font_family: default
+  font_size: 10
+  theme: light
+  transparency: 100
+data_processing:
+  clean_text_fields: true
+  default_currency: USD
+  min_data_quality_score: 80.0
+  normalize_prices: true
+  price_decimal_places: 2
+  remove_duplicates: true
+  validate_urls: true
+export:
+  csv_delimiter: ','
+  date_format: '%Y-%m-%d %H:%M:%S'
+  default_format: csv
+  include_headers: true
+general:
+  log_level: INFO
+  retry_attempts: 3
+  timeout: 30
+  user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/91.0.4472.124 Safari/537.36
+network:
+  accept_encoding: gzip, deflate, br
+  accept_language: en-US,en;q=0.9
+  proxy_url: null
+  use_proxy: false
+scraping:
+  default_delay: 1.0
+  filter_duplicates: true
+  max_delay: 2.0
+  max_products: 100
+  min_delay: 0.5
+  requests_per_minute: 30
+  skip_errors: true
+ui:
+  auto_save: true
+  remember_position: true
+  theme: default
+  window_height: 800
+  window_width: 1200
+visualization:
+  chart_dpi: 300
+  chart_height: 6
+  chart_save_format: png
+  chart_style: professional
+  chart_width: 10
+  color_palette:
+  - '#2E86AB'
+  - '#A23B72'
+  - '#F18F01'
+  - '#C73E1D'
+  - '#592E83'

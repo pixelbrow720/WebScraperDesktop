@@ -1,0 +1,181 @@
+# Site Configurations for E-Commerce Data Scraper
+# This file contains configurations for all supported scraping targets
+
+"Books to Scrape":
+  # Site information
+  base_url: "http://books.toscrape.com/"
+  description: "Demo bookstore for scraping practice - 1000 books with ratings and prices"
+  legal_status: "Legal - Demo site designed for scraping"
+  
+  # Scraping configuration
+  rate_limit: 1.0  # Seconds between requests
+  max_pages: 50
+  request_timeout: 30
+  
+  # Site-specific settings
+  pagination_type: "next_page"
+  product_listing_selector: "article.product_pod"
+  
+  # Supported categories
+  supported_categories:
+    - "Travel"
+    - "Mystery"
+    - "Historical Fiction"
+    - "Sequential Art"
+    - "Classics"
+    - "Philosophy"
+    - "Romance"
+    - "Womens Fiction"
+    - "Fiction"
+    - "Childrens"
+    - "Religion"
+    - "Nonfiction"
+    - "Music"
+    - "Default"
+    - "Science Fiction"
+    - "Sports and Games"
+    - "Add a comment"
+    - "Fantasy"
+    - "New Adult"
+    - "Young Adult"
+    - "Science"
+    - "Poetry"
+    - "Paranormal"
+    - "Art"
+    - "Psychology"
+    - "Autobiography"
+    - "Parenting"
+    - "Adult Fiction"
+    - "Humor"
+    - "Horror"
+    - "History"
+    - "Food and Drink"
+    - "Christian Fiction"
+    - "Business"
+    - "Biography"
+    - "Thriller"
+    - "Contemporary"
+    - "Spirituality"
+    - "Academic"
+    - "Self Help"
+    - "Historical"
+    - "Christian"
+    - "Suspense"
+    - "Short Stories"
+    - "Novels"
+    - "Health"
+    - "Politics"
+    - "Cultural"
+    - "Erotica"
+    - "Crime"
+  
+  # Data fields available
+  available_fields:
+    - "name"
+    - "price"
+    - "rating"
+    - "availability"
+    - "description"
+    - "category"
+    - "upc"
+    - "url"
+
+"Quotes to Scrape":
+  # Site information
+  base_url: "http://quotes.toscrape.com/"
+  description: "Demo quotes site for scraping practice - quotes with authors and tags"
+  legal_status: "Legal - Demo site designed for scraping"
+  
+  # Scraping configuration
+  rate_limit: 1.0  # Seconds between requests
+  max_pages: 10
+  request_timeout: 30
+  
+  # Site-specific settings
+  pagination_type: "next_page"
+  quote_selector: "div.quote"
+  
+  # Supported tags (categories)
+  supported_tags:
+    - "change"
+    - "deep-thoughts"
+    - "thinking"
+    - "world"
+    - "abilities"
+    - "choices"
+    - "inspirational"
+    - "life"
+    - "live"
+    - "miracle"
+    - "miracles"
+    - "aliteracy"
+    - "books"
+    - "classic"
+    - "humor"
+    - "love"
+    - "friendship"
+    - "life-lessons"
+    - "truth"
+    - "wisdom"
+    - "philosophy"
+    - "god"
+    - "religion"
+    - "hope"
+    - "happiness"
+    - "success"
+    - "motivational"
+    - "education"
+    - "knowledge"
+    - "science"
+    - "learning"
+  
+  # Data fields available
+  available_fields:
+    - "name"  # Quote by Author
+    - "text"  # Quote content
+    - "author"
+    - "tags"
+    - "url"
+    - "rating"  # Fixed 5.0 for all quotes
+    - "price"   # Fixed 0.0 for all quotes
+    - "category"  # Always "Quotes"
+
+# Template for adding new sites
+# "Site Name":
+#   base_url: "https://example.com/"
+#   description: "Description of the site"
+#   legal_status: "Legal status and permission information"
+#   
+#   rate_limit: 1.0
+#   max_pages: 10
+#   request_timeout: 30
+#   
+#   pagination_type: "next_page"  # or "page_numbers", "infinite_scroll"
+#   
+#   supported_categories: []
+#   available_fields: []
+#   
+#   # Optional: Custom headers for this site
+#   custom_headers:
+#     "Referer": "https://example.com/"
+#     "Accept": "text/html,application/xhtml+xml"
+#   
+#   # Optional: Site-specific selectors
+#   selectors:
+#     product_list: "div.product"
+#     product_link: "a.product-link"
+#     name: "h1.product-title"
+#     price: "span.price"
+#     rating: "div.rating"
+
+# Legal Notice:
+# This configuration file is designed to work only with websites that:
+# 1. Explicitly allow scraping (like demo sites)
+# 2. Have robots.txt permissions for scraping
+# 3. Are used for educational/research purposes
+# 
+# Always check a website's robots.txt and terms of service before scraping.
+# Respect rate limits and don't overload servers.
+# 
+# The sites included here (books.toscrape.com, quotes.toscrape.com) are
+# specifically designed for scraping practice and education.

@@ -1,0 +1,462 @@
+# E-Commerce Data Scraper - Git Ignore File
+# Prevents sensitive and unnecessary files from being committed to version control
+
+# ==============================================================================
+# Python Language Files
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller - builds
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+test-results/
+coverage-reports/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+virtualenv/
+
+# ==============================================================================
+# Application-Specific Files
+# ==============================================================================
+
+# Log files and directories
+logs/
+*.log
+*.log.*
+log_*.txt
+application.log
+error.log
+debug.log
+
+# Scraped data exports (can be large, user should commit selectively)
+exports/
+data/exported/
+output/
+scraped_data/
+data_exports/
+bulk_exports/
+*.csv
+*.xlsx
+*.json
+
+# Charts and visualizations (regenerated on demand)
+charts/
+visualizations/
+graphs/
+plots/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.pdf
+*.svg
+chart_*.png
+plot_*.pdf
+
+# Configuration overrides and user settings
+config/local_settings.yaml
+config/user_settings.yaml
+config/secrets.yaml
+config/private_*
+config/*_local.*
+config/*_private.*
+user_config/
+local_config/
+
+# Application cache and temporary files
+.cache/
+cache/
+*.cache
+tmp/
+temp/
+*.tmp
+*.temp
+*_temp.*
+*_cache.*
+
+# Database files (if local storage is used)
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Session and state files
+session_*
+state_*
+*.session
+*.state
+
+# Backup files
+*.bak
+*.backup
+*_backup.*
+backup_*
+
+# ==============================================================================
+# Development Environment Files
+# ==============================================================================
+
+# Environment variables
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+*.env
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+.loadpath
+.externalToolBuilders/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# PEP 582
+__pypackages__/
+
+# ==============================================================================
+# Operating System Files
+# ==============================================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==============================================================================
+# Archive and Package Files
+# ==============================================================================
+
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.bz2
+*.xz
+*.tgz
+*.deb
+*.rpm
+*.exe
+*.app
+
+# ==============================================================================
+# Application Runtime Files
+# ==============================================================================
+
+# Process IDs and lock files
+*.pid
+*.lock
+*.lockfile
+
+# Performance profiling
+*.prof
+*.pstats
+profile_*
+
+# Memory dumps
+*.dump
+*.dmp
+
+# ==============================================================================
+# Documentation and Build Files
+# ==============================================================================
+
+# Documentation builds
+docs/_build/
+docs/site/
+docs/build/
+_build/
+site/
+
+# Sphinx
+docs/_static/
+docs/_templates/
+
+# ==============================================================================
+# Third-party and External Files
+# ==============================================================================
+
+# Downloaded resources
+downloads/
+external/
+third_party/
+vendor/
+
+# Node.js (if any frontend tools are used)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==============================================================================
+# Specific Tool Configurations
+# ==============================================================================
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath
+*.sage.py
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Rope
+.ropeproject
+
+# mkdocs
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# pytype
+.pytype/
+
+# Cython
+cython_debug/
+
+# ==============================================================================
+# User Data and Preferences
+# ==============================================================================
+
+# User-specific data
+user_data/
+preferences/
+profiles/
+user_profiles/
+personal_*
+
+# Application state
+app_state/
+runtime_state/
+session_data/
+
+# ==============================================================================
+# Reports and Analysis Output
+# ==============================================================================
+
+# Generated reports
+reports/
+analysis/
+statistics/
+metrics/
+summaries/
+data_quality_*
+performance_*
+
+# ==============================================================================
+# Configuration Management
+# ==============================================================================
+
+# Backup configurations
+config/*.bak
+config/*_backup.*
+config/backup_*
+
+# Log rotation files
+logs/*.1
+logs/*.2
+logs/*.3
+logs/*.4
+logs/*.5
+logs/*.gz
+
+# SSL certificates and keys
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+
+# ==============================================================================
+# Keep Important Files (Negative Patterns)
+# ==============================================================================
+
+# Essential configuration templates
+!config/settings.yaml
+!config/sites.yaml
+
+# Documentation
+!docs/
+!docs/*.md
+!docs/**/*.md
+!*.md
+
+# Source code
+!src/
+!src/**/*.py
+
+# Entry points
+!main.py
+!run.py
+
+# Project files
+!pyproject.toml
+!setup.py
+!setup.cfg
+
+# Example configurations
+!config/example_*
+!config/template_*
+!config/default_*
+
+# Assets and resources
+!assets/
+!resources/
+!static/
+
+# ==============================================================================
+# Custom Application Exclusions
+# ==============================================================================
+
+# Scraping operation files
+scraping_sessions/
+active_sessions/
+incomplete_scrapes/
+
+# Data validation artifacts
+validation_errors/
+quality_reports/
+data_issues/
+
+# Performance monitoring
+monitoring/
+metrics/
+benchmarks/
+
+# Experimental features
+experiments/
+prototype/
+sandbox/
+
+# Legacy files
+legacy/
+deprecated/
+old_*
+archive/
+
+# ==============================================================================
+# End of .gitignore
+# ==============================================================================
+
+# Note: This .gitignore is designed for the E-Commerce Data Scraper project
+# It balances between excluding unnecessary files and preserving important
+# project assets. Users can selectively commit exported data if needed.

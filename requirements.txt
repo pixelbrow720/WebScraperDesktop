@@ -1,0 +1,19 @@
+### Web Scraping
+requests>=2.32.3          # HTTP library for making requests
+beautifulsoup4>=4.13.4    # HTML/XML parsing
+trafilatura>=2.0.0        # Text extraction from web pages
+
+### Data Processing
+pandas>=2.3.0             # Data analysis and manipulation
+numpy>=1.24.0             # Numerical computing
+
+### Visualization
+matplotlib>=3.10.3        # Plotting library
+seaborn>=0.13.2          # Statistical visualization
+
+### File Handling
+openpyxl>=3.1.5          # Excel file support
+pyyaml>=6.0.2            # YAML configuration files
+
+### GUI Framework
+ # tkinter                   # Desktop GUI (included with Python)
