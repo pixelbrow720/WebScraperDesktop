@@ -45,8 +45,8 @@ A professional Python desktop application for legal e-commerce data scraping wit
 
 1. **Clone repository:**
 ```bash
-git clone https://github.com/yourusername/ecommerce-scraper.git
-cd ecommerce-scraper
+git clone https://github.com/pixelrow720/WebScraperDesktop.git
+cd WebScraperDesktop
 ```
 
 2. **Install dependencies:**
